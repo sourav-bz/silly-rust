@@ -24,7 +24,7 @@ export async function generateMetadata({
   const publishedTime = new Date(blog.date).toISOString();
   const modifiedTime = new Date().toISOString();
   const blogUrl = `https://sillyrust.com/blogs/${blog.slug}`;
-  const imageUrl = blog.image || "https://sillyrust.com/images/og-square.png";
+  const imageUrl = "https://sillyrust.com/images/og-square.png";
 
   return {
     title: `${blog.title} | Silly Rust`,
