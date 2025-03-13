@@ -1,14 +1,8 @@
-# souravk.com
+# Silly Rust
 
-A personal portfolio website built with Next.js and TypeScript, featuring a clean design and blog functionality.
+Documenting my journey with learning Rust and Bevy here.\
+Will be answering trivial questions through research and live examples.
 
-## Tech Stack
+## View Blogs
 
-- Next.js
-- TypeScript
-- Tailwind CSS
-- Contentlayer for content management
-
-## Updates
-
-Check out the update logs of this project here => https://souravk.com/projects/souravk.com
+Check out this project here => https://silly-rust-xi.vercel.app/
