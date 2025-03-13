@@ -3,7 +3,7 @@ import { satoshi, fraunces } from "./fonts";
 import SideBar from "@/components/SideBar";
 
 export const metadata = {
-  title: "Sourav",
+  title: "Silly Rust - Learn Rust and Bevy",
   description: "Insightful Articles & Endless Inspiration.",
   icons: {
     icon: "./favicon.ico",
