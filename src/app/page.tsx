@@ -24,7 +24,7 @@ export default function BlogTimeline() {
                     <h2 className="text-[20px] font-medium text-[#191818] group-hover:text-gray-600">
                       {blog.title}
                     </h2>
-                    <p className="mt-1 text-[#8A8484] text-[18px]">
+                    <p className="mt-1 text-[#8A8484] text-[18px] line-clamp-1">
                       {blog.description}
                     </p>
                     <div className="flex items-center gap-2 text-gray-500 mt-[12px]">

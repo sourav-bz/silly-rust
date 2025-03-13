@@ -1,10 +1,47 @@
 import "./global.css";
 import { satoshi, fraunces } from "./fonts";
 import SideBar from "@/components/SideBar";
+import { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Silly Rust - Learn Rust and Bevy",
-  description: "Insightful Articles & Endless Inspiration.",
+  description:
+    "Documenting my journey of learning Rust and Bevy game engine. Insightful articles about game development, ECS architecture, and Rust programming.",
+  keywords: "Rust, Bevy, game development, ECS, programming, tutorials",
+  authors: [{ name: "Sourav" }],
+  creator: "Sourav",
+  publisher: "Silly Rust",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL("https://sillyrust.com"),
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://sillyrust.com",
+    siteName: "Silly Rust",
+    title: "Silly Rust - Learn Rust and Bevy",
+    description:
+      "Documenting my journey of learning Rust and Bevy game engine. Insightful articles about game development, ECS architecture, and Rust programming.",
+    images: [
+      {
+        url: "/images/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Silly Rust - Learn Rust and Bevy",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Silly Rust - Learn Rust and Bevy",
+    description:
+      "Documenting my journey of learning Rust and Bevy game engine. Insightful articles about game development, ECS architecture, and Rust programming.",
+    creator: "@sourav_bz",
+    images: ["/images/og-image.jpg"],
+  },
   icons: {
     icon: "./favicon.ico",
     shortcut: "./favicon.ico",
