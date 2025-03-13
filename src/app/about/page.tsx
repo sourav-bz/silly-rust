@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto">
@@ -9,87 +7,37 @@ export default function AboutPage() {
         {/* Introduction Section */}
         <section>
           <p className="text-gray-700 leading-relaxed">
-            Hello! I&apos;m Sourav, a passionate developer and writer exploring
-            the intersection of technology and human experience. I believe in
-            creating meaningful solutions that make a difference in
-            people&apos;s lives.
+            Hello! I&apos;m Sourav, and I&apos;ve set out on a journey to learn
+            Rust and build things with the Bevy game engine.
+            <br />
+            I want to build and learn new things, and the best way to reaffirm
+            your learnings is to write and share so that others can understand
+            it from a better perspective.
+            <br />
+            I come from a Product Engineering background, where I mostly worked
+            with JS frameworks and have experimented with Python. I started
+            learning Rust to get into building things with low-level languages.
+            <br />
+            <br />
+            One of the projects I&apos;m currently working on is Rigit.io, where
+            a good simulation engine is a critical component.
+            <br />
+            It&apos;s going to be an open-source project. Rust gives us
+            low-level control, and with Bevy being open-source, it will help our
+            project grow alongside the Bevy game engine.
+            <br />
+            I strongly believe Bevy will become a go-to game development engine
+            in the future. They have a very active community and a transparent,
+            clean tech stack.
+            <br />
+            <br />
+            The blogs here will be formatted in a question-and-answer format,
+            where I address both obvious and non-obvious questions that
+            I&apos;ve had, research the answers, and write examples to solidify
+            my understanding.
+            <br />
+            <br />
           </p>
-        </section>
-
-        {/* Current Focus */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Current Focus</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="p-4 bg-[#F3F3F6] rounded-lg border border-[#DBDBDB]">
-              <h3 className="font-medium mb-2">AI & Machine Learning</h3>
-              <p className="text-sm text-gray-600">
-                Exploring the potential of AI to solve real-world problems and
-                enhance human capabilities.
-              </p>
-            </div>
-            <div className="p-4 bg-[#F3F3F6] rounded-lg border border-[#DBDBDB]">
-              <h3 className="font-medium mb-2">Web Development</h3>
-              <p className="text-sm text-gray-600">
-                Building modern, responsive web applications with a focus on
-                user experience and performance.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        {/* Projects Section */}
-        <section>
-          <h2 className="text-2xl font-semibold mb-4">Featured Projects</h2>
-          <div className="space-y-4">
-            <Link
-              href="/projects/rigit"
-              className="block p-4 bg-[#F3F3F6] rounded-lg border border-[#DBDBDB] hover:border-gray-400 transition-colors"
-            >
-              <div className="flex items-center justify-between">
-                <h3 className="font-medium">Rigit.io</h3>
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </div>
-              <p className="text-sm text-gray-600 mt-2">
-                An AI-powered platform for content creation and management.
-              </p>
-            </Link>
-            <Link
-              href="/projects/scrib"
-              className="block p-4 bg-[#F3F3F6] rounded-lg border border-[#DBDBDB] hover:border-gray-400 transition-colors"
-            >
-              <div className="flex items-center justify-between">
-                <h3 className="font-medium">Scrib</h3>
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M9 5l7 7-7 7"
-                  />
-                </svg>
-              </div>
-              <p className="text-sm text-gray-600 mt-2">
-                A modern note-taking application with collaborative features.
-              </p>
-            </Link>
-          </div>
         </section>
 
         {/* Contact Section */}
@@ -97,7 +45,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mb-4">Get in Touch</h2>
           <div className="flex space-x-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/sourav-bz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-800 transition-colors"
@@ -105,7 +53,15 @@ export default function AboutPage() {
               GitHub
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://x.com/sourav_bz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-600 hover:text-gray-800 transition-colors"
+            >
+              Twitter/X
+            </a>
+            <a
+              href="https://linkedin.com/in/souravbz"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-gray-800 transition-colors"
@@ -113,7 +69,7 @@ export default function AboutPage() {
               LinkedIn
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:hey@souravk.com"
               className="text-gray-600 hover:text-gray-800 transition-colors"
             >
               Email

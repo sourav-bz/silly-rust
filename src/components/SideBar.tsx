@@ -16,10 +16,9 @@ export default function SideBar() {
     <aside className="sticky top-0 w-[320px] h-[800px] bg-[#F3F3F6] border border-[#DBDBDB] p-8 mx-4 mt-4 mb-40 rounded-[14px]">
       <div className="space-y-10">
         <div>
-          <h1 className="text-[34px] font-bold font-fraunces">Sourav</h1>
+          <h1 className="text-[34px] font-bold font-fraunces">Silly Rust</h1>
           <p className="text-[#8A8484] text-[16px]">
-            A Curious Seeker, Writer, Exploring the Intersection of Technology
-            and Humanity.
+            Documenting my journey with learning Rust and Bevy here.
           </p>
         </div>
 
@@ -33,16 +32,6 @@ export default function SideBar() {
             }`}
           >
             BLOGS
-          </Link>
-          <Link
-            href="/projects"
-            className={`block mb-4 px-3 transition-colors ${
-              isActive("/projects")
-                ? "text-gray-900 font-medium border-l-2 border-black"
-                : "text-gray-800 hover:text-gray-600 hover:bg-gray-100"
-            }`}
-          >
-            <span>PROJECTS</span>
           </Link>
           <Link
             href="/about"
