@@ -5,4 +5,4 @@ Will be answering trivial questions through research and live examples.
 
 ## View Blogs
 
-Check out this project here => https://silly-rust-xi.vercel.app/
+Check out this project here => https://sillyrust.com
