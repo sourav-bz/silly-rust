@@ -57,18 +57,6 @@ export default function BlogContent({ blog }: BlogContentProps) {
           </div>
         </div>
 
-        {blog.image && (
-          <div className="relative h-96 mb-8">
-            <Image
-              src={blog.image}
-              alt={blog.title}
-              fill
-              className="object-cover rounded-lg"
-              priority
-            />
-          </div>
-        )}
-
         <div className="prose prose-lg max-w-none">
           <MDXContent />
         </div>

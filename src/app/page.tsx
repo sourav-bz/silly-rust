@@ -44,16 +44,6 @@ export default function BlogTimeline() {
                       </div>
                     </div>
                   </div>
-                  {blog.image && (
-                    <div className="w-32 h-24 relative rounded-lg overflow-hidden bg-gray-100">
-                      <Image
-                        src={blog.image}
-                        alt={blog.title}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  )}
                 </Link>
               </article>
             ))}

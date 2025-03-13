@@ -18,7 +18,7 @@ export default function SideBar() {
         <div>
           <h1 className="text-[34px] font-bold font-fraunces">Silly Rust</h1>
           <p className="text-[#8A8484] text-[16px]">
-            Documenting my journey with learning Rust and Bevy here.
+            Documenting my journey of learning Rust and Bevy.
           </p>
         </div>
 
