@@ -27,20 +27,21 @@ export const metadata: Metadata = {
       "Documenting my journey of learning Rust and Bevy game engine. Insightful articles about game development, ECS architecture, and Rust programming.",
     images: [
       {
-        url: "/images/og-image.jpg",
+        url: "https://sillyrust.com/images/og-square.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "Silly Rust - Learn Rust and Bevy",
+        type: "image/png",
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Silly Rust - Learn Rust and Bevy",
     description:
       "Documenting my journey of learning Rust and Bevy game engine. Insightful articles about game development, ECS architecture, and Rust programming.",
     creator: "@sourav_bz",
-    images: ["/images/og-image.jpg"],
+    images: ["https://sillyrust.com/images/og-square.png"],
   },
   icons: {
     icon: [
