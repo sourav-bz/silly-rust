@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://sillyrust.com/images/og-square.png",
-        width: 1200,
-        height: 1200,
+        width: 124,
+        height: 124,
         alt: "Silly Rust - Learn Rust and Bevy",
         type: "image/png",
       },

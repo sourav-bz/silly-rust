@@ -23,6 +23,8 @@ export async function generateMetadata({
 
   const publishedTime = new Date(blog.date).toISOString();
   const modifiedTime = new Date().toISOString();
+  const blogUrl = `https://sillyrust.com/blogs/${blog.slug}`;
+  const imageUrl = blog.image || "https://sillyrust.com/images/og-square.png";
 
   return {
     title: `${blog.title} | Silly Rust`,
@@ -36,25 +38,27 @@ export async function generateMetadata({
       publishedTime,
       modifiedTime,
       authors: [blog.author],
-      images: blog.image
-        ? [
-            {
-              url: blog.image,
-              width: 1200,
-              height: 630,
-              alt: blog.title,
-            },
-          ]
-        : undefined,
+      url: blogUrl,
+      siteName: "Silly Rust",
+      images: [
+        {
+          url: imageUrl,
+          width: 124,
+          height: 124,
+          alt: blog.title,
+          type: "image/png",
+        },
+      ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title: blog.title,
       description: blog.description,
-      images: blog.image ? [blog.image] : undefined,
+      creator: "@sourav_bz",
+      images: [imageUrl],
     },
     alternates: {
-      canonical: `https://sillyrust.com/blogs/${blog.slug}`,
+      canonical: blogUrl,
     },
   };
 }
